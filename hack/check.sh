@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 readonly reset=$(tput sgr0)
-readonly red=$(tput bold; tput setaf 1)
-readonly green=$(tput bold; tput setaf 2)
+readonly red=$(tput bold; tput setaf 1 0 0)
+readonly green=$(tput bold; tput setaf 2 0 0)
 
 exit_code=0
 check_scope=$1
