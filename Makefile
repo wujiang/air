@@ -36,6 +36,7 @@ install: check
 release: check
 	GOOS=darwin GOARCH=amd64 $(GO) build -ldflags '$(LDFLAGS)' -o bin/darwin/air
 	GOOS=linux GOARCH=amd64 $(GO) build -ldflags '$(LDFLAGS)' -o bin/linux/air
+	GOOS=openbsd GOARCH=amd64 $(GO) build -ldflags '$(LDFLAGS)' -o bin/openbsd/air
 	GOOS=windows GOARCH=amd64 $(GO) build -ldflags '$(LDFLAGS)' -o bin/windows/air.exe
 
 .PHONY: docker-image
